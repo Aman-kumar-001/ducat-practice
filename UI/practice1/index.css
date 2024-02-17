@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.navbar{
+
+.navbar {
     background-color: #121619;
     display: flex;
     width: 100%;
     height: 60px;
-    position: relative;
+    position: sticky;
 }
-.left{
+
+.left {
     width: 50%;
     display: flex;
     align-items: center;
@@ -17,43 +19,105 @@
     color: white;
     padding-left: 30px;
 }
-span{
-    color:#FD9D3E ;
-    font-size:47px ;
+
+span {
+    color: #fd9d3e;
+    font-size: 47px;
 }
-.right{
+
+.right {
     color: white;
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.right ul{
+
+.right ul {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    
-}
-.right ul li{
-    list-style: none;
-    
 }
 
-@media screen and (max-width:700px) {
-    .icon{
-      display: flex;
-      color: white;
-      width: 50%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+.right ul li {
+    list-style: none;
+
+}
+
+ul li:hover {
+    color: #fd9d3e;
+}
+
+i:hover {
+    color: #fd9d3e;
+}
+
+@media screen and (max-width:999px) {
+    .icon {
+        display: flex;
+        color: white;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-    .right{
+
+    .right {
         display: none;
     }
 }
-@media screen and (min-width:700px) {
-    .icon{
-      display: none;
+
+@media screen and (min-width:1000px) {
+    .icon {
+        display: none;
     }
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-image: url(./assests/4457121.jpg);
+}
+
+i {
+    color: black;
+}
+
+
+.about-section {
+    display: flex;
+    padding: 20px 10px 0 10px;
+    background-color: #fd9d3e;
+    color: black;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-order {
+    display: grid;
+    width: 20%;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-delivery {
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.about-recipe {
+    width: 20%;
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
 }
