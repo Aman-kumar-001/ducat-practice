@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 .navbar {
@@ -88,14 +89,14 @@ i {
 
 .about-section {
     display: flex;
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px ;
     background-color: #fd9d3e;
     color: black;
-    height: 200px;
+    height: 250px;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
+    width: 98.7%;
+    /* margin: 0 auto; */
 }
 
 .about-order {
@@ -120,4 +121,56 @@ h2 {
     display: grid;
     justify-content: center;
     font-size: 30px;
+}
+.special{
+    width: 100%;
+    height: 500px;
+    padding-top: 40px;
+    justify-content: center;
+}
+.special-box{
+    width: 100%;
+}
+.down{
+    padding-top: 20px;
+    justify-content: space-evenly;
+    display: flex;
+}
+h1{
+    display: grid;
+    justify-content: center;
+    padding-top: 10px;
+    font-size:40px ;
+}
+.down img{
+    height: 300px;
+    width: 300px;
+}
+.down img:hover{
+    border-radius: 10%;
+    border: 2px solid #121619;
+}
+
+.menu{
+    background-color: #121619;
+    color: #fd9d3e;
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+}
+.menu-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu-list img{
+    height: 200px;
+    width: 300px; 
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.pizza-detail h6{
+    display: grid;
+    justify-content: center;
+    font-size: 17px;
+    font-style: italic;
 }
