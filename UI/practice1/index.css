@@ -3,6 +3,9 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .navbar {
     background-color: #121619;
@@ -44,12 +47,17 @@ span {
     list-style: none;
 
 }
+ a{
+    color: blue;
+    list-style: none;
+    text-decoration: none;
+}
 
-ul li:hover {
+ul a:hover {
     color: #fd9d3e;
 }
 
-i:hover {
+a:hover {
     color: #fd9d3e;
 }
 
