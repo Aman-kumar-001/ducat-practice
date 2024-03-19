@@ -2,425 +2,520 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            color: red;
-            /* font-size: 30px; */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
 </head>
 
+
+
 <body>
+  <script>
+
+    // //1
+    // for(let i=1;i<=5;i++){
+    //     for(let j=1 ; j<=i ; j++){
+    //         document.write("*");
+    //     }
+    //     document.write("<br/>")
+    // }
+
+    //2
+    //             for(let i=1;i<=5;i++){
+    //                 for(let j=5 ; j>=i ; j--){
+    //                     document.write("*");
+    //                 }
+    //                 document.write("<br/>")
+    //             }
+
+
+    //             //3
+    //             // let i , j, k;
+    //             for(let i=1 ; i<=5;i++){
+    //                   for(k=1 ; k<=5-i ;k++){
+    //                     document.write("&nbsp;&nbsp;");
+    //                   }
+    //                   for(k=1;k<=i;k++){
+    //                     document.write("*");
+    //                   }
+    //                   document.write("<br/>");
+    //             }
+
+
+
+    //             //4
+    //             for(i=1;i<=5;i++){
+    //                 for(j=1;j<=5-i;j++){
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 for(k=1;k<=i;k++){
+    //                     document.write("*");
+    //                 }
+    //                 for(m=2;m<=i;m++){
+    //                     document.write("*");
+    //                 }
+    //                 for(l=1;l<=5-i;l++){
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 document.write("<br/>"); 
+    //             }
+
+
+
+    //             //5
+    //             for(i=1;i<=5;i++){
+    //                 for(k=2;k<=i;k++){
+    //                      document.write("&nbsp;&nbsp;");
+    //                  }
+    //                 for(j=1;j<=5-i;j++){
+    //                     document.write("*");
+    //                 }
+    //                 for(l=0;l<=5-i;l++){
+    //                     document.write("*");
+    //                 }
+    //                 document.write("<br/>"); 
+    //             }
+
+
+
+
+    //             // let i , j,k,l;
+    //             // let m,n,o,p;
+
+    //             //6
+
+    //             for(let i=1 ; i<=5;i++){
+
+    //                 for(j=0 ;j<i-1;j++){
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 for(k=0;k<=5-i;k++){
+    //                     document.write("*");
+    //                   }
+    //                   for(l=1;l<=5-i;l++){
+    //                     document.write("*");
+    //                   }
+
+    //                   document.write("<br/>");
+    //             }
+
+    //             for(m=1;m<=5;m++){
+    //                 for(n=0;n<=5-m;n++){
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 for(o=0 ;o<=m-1;o++){
+    //                     document.write("*");
+    //                 }
+    //                 for(p=1;p<=m-1;p++){
+    //                     document.write("*");
+    //                 }
+    //                 document.write("<br/>");
+    //             }
+
+
+
+    //             //7
+    //             // let i , j,k,l,m;
+
+    //             for (i = 1; i <= 5; i++) {
+    //                 for (j = 1; j <= 5 - i; j++) {
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 for (k = 1; k <= i; k++) {
+    //                     document.write("*");
+    //                 }
+    //                 for (m = 2; m <= i; m++) {
+    //                     document.write("*");
+    //                 }
+    //                 for (l = 1; l <= 5 - i; l++) {
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 document.write("<br/>");
+    //             }
+    //             for (i = 1; i <= 5; i++) {
+    //                 for (k = 2; k <= i; k++) {
+    //                     document.write("&nbsp;&nbsp;");
+    //                 }
+    //                 for (j = 1; j <= 5 - i; j++) {
+    //                     document.write("*");
+    //                 }
+    //                 for (l = 0; l <= 5 - i; l++) {
+    //                     document.write("*");
+    //                 }
+    //                 document.write("<br/>");
+    //             }
+
+    //             //8
+
+    //             var height = 5;
+
+    //             for (var i = 1; i <= height; i++) {
+    //                 for (var j = 1; j <= height - i; j++) {
+    //                     document.write("&nbsp;");
+    //                 }
+    //                 for (var k = 1; k <= 2 * i - 1; k++) {
+    //                     if (k == 1 || k == 2 * i - 1 || i == height) {
+    //                         document.write("*");
+    //                     } else {
+    //                         document.write("&nbsp;");
+    //                     }
+    //                 }
+    //                 document.write("<br>");
+    //             }
+
+
+
 
-    <body>
-        <script>
-
-            // //1
-            // for(let i=1;i<=5;i++){
-            //     for(let j=1 ; j<=i ; j++){
-            //         document.write("*");
-            //     }
-            //     document.write("<br/>")
-            // }
-
-            //2
-//             for(let i=1;i<=5;i++){
-//                 for(let j=5 ; j>=i ; j--){
-//                     document.write("*");
-//                 }
-//                 document.write("<br/>")
-//             }
-
-
-//             //3
-//             // let i , j, k;
-//             for(let i=1 ; i<=5;i++){
-//                   for(k=1 ; k<=5-i ;k++){
-//                     document.write("&nbsp;&nbsp;");
-//                   }
-//                   for(k=1;k<=i;k++){
-//                     document.write("*");
-//                   }
-//                   document.write("<br/>");
-//             }
-
-
-
-//             //4
-//             for(i=1;i<=5;i++){
-//                 for(j=1;j<=5-i;j++){
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 for(k=1;k<=i;k++){
-//                     document.write("*");
-//                 }
-//                 for(m=2;m<=i;m++){
-//                     document.write("*");
-//                 }
-//                 for(l=1;l<=5-i;l++){
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 document.write("<br/>"); 
-//             }
-
-
-
-//             //5
-//             for(i=1;i<=5;i++){
-//                 for(k=2;k<=i;k++){
-//                      document.write("&nbsp;&nbsp;");
-//                  }
-//                 for(j=1;j<=5-i;j++){
-//                     document.write("*");
-//                 }
-//                 for(l=0;l<=5-i;l++){
-//                     document.write("*");
-//                 }
-//                 document.write("<br/>"); 
-//             }
-
-
-
-
-//             // let i , j,k,l;
-//             // let m,n,o,p;
-
-//             //6
-
-//             for(let i=1 ; i<=5;i++){
-
-//                 for(j=0 ;j<i-1;j++){
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 for(k=0;k<=5-i;k++){
-//                     document.write("*");
-//                   }
-//                   for(l=1;l<=5-i;l++){
-//                     document.write("*");
-//                   }
-
-//                   document.write("<br/>");
-//             }
-
-//             for(m=1;m<=5;m++){
-//                 for(n=0;n<=5-m;n++){
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 for(o=0 ;o<=m-1;o++){
-//                     document.write("*");
-//                 }
-//                 for(p=1;p<=m-1;p++){
-//                     document.write("*");
-//                 }
-//                 document.write("<br/>");
-//             }
-
-
-
-//             //7
-//             // let i , j,k,l,m;
-
-//             for (i = 1; i <= 5; i++) {
-//                 for (j = 1; j <= 5 - i; j++) {
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 for (k = 1; k <= i; k++) {
-//                     document.write("*");
-//                 }
-//                 for (m = 2; m <= i; m++) {
-//                     document.write("*");
-//                 }
-//                 for (l = 1; l <= 5 - i; l++) {
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 document.write("<br/>");
-//             }
-//             for (i = 1; i <= 5; i++) {
-//                 for (k = 2; k <= i; k++) {
-//                     document.write("&nbsp;&nbsp;");
-//                 }
-//                 for (j = 1; j <= 5 - i; j++) {
-//                     document.write("*");
-//                 }
-//                 for (l = 0; l <= 5 - i; l++) {
-//                     document.write("*");
-//                 }
-//                 document.write("<br/>");
-//             }
-
-//             //8
-
-//             var height = 5;
-
-//             for (var i = 1; i <= height; i++) {
-//                 for (var j = 1; j <= height - i; j++) {
-//                     document.write("&nbsp;");
-//                 }
-//                 for (var k = 1; k <= 2 * i - 1; k++) {
-//                     if (k == 1 || k == 2 * i - 1 || i == height) {
-//                         document.write("*");
-//                     } else {
-//                         document.write("&nbsp;");
-//                     }
-//                 }
-//                 document.write("<br>");
-//             }
-
-
-           
-
-//        //9
-
-//        var height = 5;
-
-// for (var i = 1; i <= height; i++) {
-//     for (var j = 1; j <= i; j++) {
-//         document.write("*");
-//     }
-//     for (var k = 1; k <= 2 * (height - i); k++) {
-//         document.write("&nbsp;");
-//     }
-//     for (var l = 1; l <= i; l++) {
-//         document.write("*");
-//     }
-//     document.write("<br>");
-// }
-
-// for (var i = height; i >= 1; i--) {
-//     for (var j = 1; j <= i; j++) {
-//         document.write("*");
-//     }
-//     for (var k = 1; k <= 2 * (height - i); k++) {
-//         document.write("&nbsp;");
-//     }
-//     for (var l = 1; l <= i; l++) {
-//         document.write("*");
-//     }
-//     document.write("<br>");
-// }
-
-// //10
-
-// var height = 5;
-
-// for (var i = 1; i <= height; i++) {
-//     for (var j = 1; j <= i; j++) {
-//         document.write("&nbsp;");
-//     }
-//     for (var k = 1; k <= 2 * (height - i) + 1; k++) {
-//         document.write("*");
-//     }
-//     document.write("<br>");
-// }
-
-// for (var i = 1; i <= height - 1; i++) {
-//     for (var j = 1; j <= height - i; j++) {
-//         document.write("&nbsp;");
-//     }
-//     for (var k = 1; k <= 2 * i + 1; k++) {
-//         document.write("*");
-//     }
-//     document.write("<br>");
+    //        //9
+
+    //        var height = 5;
+
+    // for (var i = 1; i <= height; i++) {
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     }
+    //     for (var k = 1; k <= 2 * (height - i); k++) {
+    //         document.write("&nbsp;");
+    //     }
+    //     for (var l = 1; l <= i; l++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
 
+    // for (var i = height; i >= 1; i--) {
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     }
+    //     for (var k = 1; k <= 2 * (height - i); k++) {
+    //         document.write("&nbsp;");
+    //     }
+    //     for (var l = 1; l <= i; l++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
 
-// }
-
-
-
-
-
-
-
-
-
-// Write a program to sort an array without using sort function
-
-// let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
-// let len = arr.length;
-
-// for (let i = 0; i < len; i++) {
-//   for (let j = 0; j < len; j++) {
-//     if (arr[i] < arr[j]) {
-//       let temp = arr[i];
-//       arr[i] = arr[j];
-//       arr[j] = temp;
-//     }
-//   }
-// }
-// console.log("Sorted Array is:", arr);
-
-//-------------------------------------------------------------------------------------
-
-// write a program to reverse an array without using reverse function.
-
-// let arr = [120, 250, 230, 150, 100];
-// let len = arr.length;
+    // //10
 
-// for (let i = 0; i < len / 2; i++) {
-//   let temp = arr[i];
-//   arr[i] = arr[len - 1 - i];
-//   arr[len - 1 - i] = temp;
-// }
-// console.log("reversed array is: ", arr);
+    // var height = 5;
+
+    // for (var i = 1; i <= height; i++) {
+    //     for (var j = 1; j <= i; j++) {
+    //         document.write("&nbsp;");
+    //     }
+    //     for (var k = 1; k <= 2 * (height - i) + 1; k++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
 
+    // for (var i = 1; i <= height - 1; i++) {
+    //     for (var j = 1; j <= height - i; j++) {
+    //         document.write("&nbsp;");
+    //     }
+    //     for (var k = 1; k <= 2 * i + 1; k++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
 
-// ------------------------------------------------------------------------------
 
-//write a program to reverse a number.
+    // }
 
-// let num = 123;
-// let reverseNum = 0;
-// while (num > 0) {
-//   let remainder = num % 10;
-//   reverseNum = reverseNum * 10 + remainder;
-//   num = parseInt(num / 10);
-// }
-// console.log("reverse number is:", reverseNum);
 
 
-// -----------------------------------------------------------------
 
-//writa a program to merge an array without using merge function.
 
-// let arr1 = [10, 20, 5, 8, 15];
-// let arr2 = [100, 80, 23, 11, 2];
 
-// for (let i = 0; i < arr2.length; i++) {
-//   arr1.push(arr2[i]);
-// }
-// console.log("Added array is :", arr1);
+
+
+
+    // Write a program to sort an array without using sort function
+
+    // let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
+    // let len = arr.length;
 
+    // for (let i = 0; i < len; i++) {
+    //   for (let j = 0; j < len; j++) {
+    //     if (arr[i] < arr[j]) {
+    //       let temp = arr[i];
+    //       arr[i] = arr[j];
+    //       arr[j] = temp;
+    //     }
+    //   }
+    // }
+    // console.log("Sorted Array is:", arr);
+
+    //-------------------------------------------------------------------------------------
+
+    // write a program to reverse an array without using reverse function.
+
+    // let arr = [120, 250, 230, 150, 100];
+    // let len = arr.length;
 
-// -------------------------------------------------------------------------------
-// write a program to get the minimum value in an array without using min function
+    // for (let i = 0; i < len / 2; i++) {
+    //   let temp = arr[i];
+    //   arr[i] = arr[len - 1 - i];
+    //   arr[len - 1 - i] = temp;
+    // }
+    // console.log("reversed array is: ", arr);
 
-// let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
-// let min = arr[0];
-// for (let i = 1; i < arr.length; i++) {
-//   if (arr[i] < min) {
-//     min = arr[i];
-//   }
-// }
-// console.log("min value is:", min);
 
-//--------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------
 
-//write a program to get the maximum value in an array.
+    //write a program to reverse a number.
 
-// let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
-// let max = arr[0];
-// for (let i = 1; i < arr.length; i++) {
-//   if (arr[i] > max) {
-//     max = arr[i];
-//   }
-// }
-// console.log("max value is:", max);
+    // let num = 123;
+    // let reverseNum = 0;
+    // while (num > 0) {
+    //   let remainder = num % 10;
+    //   reverseNum = reverseNum * 10 + remainder;
+    //   num = parseInt(num / 10);
+    // }
+    // console.log("reverse number is:", reverseNum);
 
-// --------------------------------------------------------------------------------------
 
+    // -----------------------------------------------------------------
 
-//write a program to get the second minimum value in an array.
+    //writa a program to merge an array without using merge function.
 
-// let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
-// let max = arr[0];
-// let secondMin = arr[0];
-// for (let i = 1; i < arr.length; i++) {
-//   if (arr[i] < max) {
-//     secondMin = max;
-//     max = arr[i];
-//   } else if (arr[i] > secondMin) {
-//     secondMin = arr[i];
-//   }
-// }
-// console.log("2nd min value is:", secondMin);
+    // let arr1 = [10, 20, 5, 8, 15];
+    // let arr2 = [100, 80, 23, 11, 2];
 
+    // for (let i = 0; i < arr2.length; i++) {
+    //   arr1.push(arr2[i]);
+    // }
+    // console.log("Added array is :", arr1);
 
-// -----------------------------------------------------------------------------------
 
-// write a program to get the second maximum value in an array
+    // -------------------------------------------------------------------------------
+    // write a program to get the minimum value in an array without using min function
 
-// let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
-// let max = arr[0];
-// let secondMax = arr[0];
-// for (let i = 1; i < arr.length; i++) {
-//   if (arr[i] > max) {
-//     secondMax = max;
-//     max = arr[i];
-//   } else if (arr[i] > secondMax) {
-//     secondMax = arr[i];
-//   }
-// }
-// console.log("2nd max value is:", secondMax);
+    // let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
+    // let min = arr[0];
+    // for (let i = 1; i < arr.length; i++) {
+    //   if (arr[i] < min) {
+    //     min = arr[i];
+    //   }
+    // }
+    // console.log("min value is:", min);
 
+    //--------------------------------------------------------------------------------------
 
+    //write a program to get the maximum value in an array.
 
+    // let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
+    // let max = arr[0];
+    // for (let i = 1; i < arr.length; i++) {
+    //   if (arr[i] > max) {
+    //     max = arr[i];
+    //   }
+    // }
+    // console.log("max value is:", max);
 
-// -----------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------------
 
-//write a program to delete a value from array with using buildin function.
 
-let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
-//first method
-// delete arr[1];
+    //write a program to get the second minimum value in an array.
 
-//second method
-arr.splice(0, 2);
-console.log(arr);
+    // let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
+    // let max = arr[0];
+    // let secondMin = arr[0];
+    // for (let i = 1; i < arr.length; i++) {
+    //   if (arr[i] < max) {
+    //     secondMin = max;
+    //     max = arr[i];
+    //   } else if (arr[i] > secondMin) {
+    //     secondMin = arr[i];
+    //   }
+    // }
+    // console.log("2nd min value is:", secondMin);
 
 
-// -----------------------------------------------------------------------------------
-//write a program to check the number is perfect square number or not.
+    // -----------------------------------------------------------------------------------
 
-let num = 16;
-let sqrt = Math.sqrt(num);
-if (sqrt * sqrt == num) {
-  console.log(`${num} is a perfect square number`);
-} else {
-  console.log(`${num} is not a perfect square number`);
-}
+    // write a program to get the second maximum value in an array
 
+    // let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
+    // let max = arr[0];
+    // let secondMax = arr[0];
+    // for (let i = 1; i < arr.length; i++) {
+    //   if (arr[i] > max) {
+    //     secondMax = max;
+    //     max = arr[i];
+    //   } else if (arr[i] > secondMax) {
+    //     secondMax = arr[i];
+    //   }
+    // }
+    // console.log("2nd max value is:", secondMax);
 
-// -----------------------------------------------------------------------------------
 
 
-//write a program to check number is palindrome or not.
 
- let num = 121;
- let temp = num;
- let rev = 0;
- while (num > 0) {
-   let rem = num % 10;
-   rev = rev * 10 + rem;
-   num = Math.floor(num / 10);
-}
- if (temp == rev) {
-   console.log("Number is palindrome.");
- } else {
-   console.log("Number is not palindrome.");
+    // -----------------------------------------------------------------------------------
 
- }
+    //write a program to delete a value from array with using buildin function.
 
+    // let arr = [10, 20, 5, 8, 15, 100, 80, 23, 11, 2];
+    // //first method
+    // // delete arr[1];
 
-// -----------------------------------------------------------
+    // //second method
+    // arr.splice(0, 2);
+    // console.log(arr);
 
 
+    // -----------------------------------------------------------------------------------
+    //write a program to check the number is perfect square number or not.
 
-// -----------------------------------------------------------
+    // let num = 16;
+    // let sqrt = Math.sqrt(num);
+    // if (sqrt * sqrt == num) {
+    //   console.log(`${num} is a perfect square number`);
+    // } else {
+    //   console.log(`${num} is not a perfect square number`);
+    // }
 
 
+    // -----------------------------------------------------------------------------------
 
 
+    //write a program to check number is palindrome or not.
 
+    //  let num = 121;
+    //  let temp = num;
+    //  let rev = 0;
+    //  while (num > 0) {
+    //    let rem = num % 10;
+    //    rev = rev * 10 + rem;
+    //    num = Math.floor(num / 10);
+    // }
+    //  if (temp == rev) {
+    //    console.log("Number is palindrome.");
+    //  } else {
+    //    console.log("Number is not palindrome.");
 
+    //  }
 
 
+    // -----------------------------------------------------------
 
 
 
-        </script>
-    </body>
+    // -----------------------------------------------------------
+
+
+
+    //Q1
+
+
+    // let str="aman sharma is in dubai";
+    // let new_str ="";
+
+
+    // for(i=0 ; i<=str.length-1 ; i++){
+
+    //     if(i==0 || str[i-1]===" "){
+    //         new_str = new_str + String.fromCharCode(str[i].charCodeAt(0) - 32);
+    //     }else {
+    //         new_str = new_str + str[i];
+    //     }
+    // }
+
+    // console.log(new_str);
+
+
+    //q2
+
+
+    // let str1="Aman sharma";
+    // let find = "m";
+
+    // function findCharIndex(str, char) {
+    //   let index = -1;
+    //     for (let i = 0; i < str1.length; i++) {
+    //         if (str[i] === char) {
+    //          index = i;
+    //          break;
+    //         }
+    //     }
+    //     console.log(index);
+
+
+    // }
+
+    // findCharIndex(str1,find);
+
+
+    //q3
+
+    // let str2 = "Aman sharma";
+    // let find1 = "s";
+
+    // function LastIndex(str , char){
+    //   let index = -1;
+    //   for(i=str.length;i=>0;i--){
+    //     if(str[i] === char){
+    //       index = i;
+    //       break;
+    //     }
+    //   }
+    //   console.log(index);
+    // }
+
+    // LastIndex(str2 , find1);
+
+
+
+    //q4
+
+    let str = "Aman sharma";
+    let find = "ma";
+
+    function findInclude(str, find) {
+      let index = false;
+      for (i = 0; i <= str.length - 1; i++) {
+        if (str[i] === find[0]) {
+          if (str[i + 1] === find[1]) {
+            index = true;
+
+          }
+
+        }
+      }
+      console.log(index);
+    }
+
+    findInclude(str, find);
+
+    //q5
+
+    // write the custom function for startWith()
+
+    let str4 = "ankit paswan";
+    let char4 = "ank";
+    let startsWith = str4.indexOf(char4) === 0;
+    console.log(startsWith); // true
+
+
+    // write the custom function for endsWith()
+
+    let str5 = "Ankit paswan";
+    let char5 = "n";
+
+    let endsWith = str5.lastIndexOf(char5) === str5.length - 1;
+
+    console.log(endsWith);
+
+
+
+
+
+
+
+
+  </script>
+</body>
 
 </html>
