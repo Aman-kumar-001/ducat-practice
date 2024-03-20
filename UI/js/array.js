@@ -58,4 +58,46 @@ console.log(data);
 
 //Q5 create a splice method :--
 
-let array4 = [];
+
+
+function customSplice(arr, start, deleteCount, ...items) {
+    // Step 1: Handle negative start value
+    if (start < 0) {
+        start = Math.max(arr.length + start, 0);
+    }
+
+    // Step 2: Handle deleteCount greater than length - start
+    deleteCount = Math.min(Math.max(deleteCount, 0), arr.length - start);
+
+    // Step 3: Remove deleted elements and store them in a new array
+    const deleted = [];
+    for (let i = 0; i < deleteCount; i++) {
+        deleted.push(arr[start + i]);
+    }
+
+    // Step 4: Shift remaining elements
+    const shiftCount = arr.length - start - deleteCount;
+    for (let i = 0; i < shiftCount; i++) {
+        arr[start + i] = arr[start + deleteCount + i];
+    }
+
+    // Step 5: Insert new items
+    const itemsCount = items.length;
+    const newLength = arr.length - deleteCount + itemsCount;
+    arr.length = newLength; // Adjust array length
+    for (let i = newLength - 1; i >= start + itemsCount; i--) {
+        arr[i] = arr[i - itemsCount];
+    }
+    for (let i = 0; i < itemsCount; i++) {
+        arr[start + i] = items[i];
+    }
+
+    // Step 6: Return the deleted elements
+    return deleted;
+}
+
+// Example usage:
+const originalArray = [1, 2, 3, 4, 5];
+const deletedElements = customSplice(originalArray, 2, 2, 7,8,9,10);
+console.log(deletedElements); // Output: [3, 4]
+console.log(originalArray); // Output: [1, 2, 'a', 'b', 'c', 5]
