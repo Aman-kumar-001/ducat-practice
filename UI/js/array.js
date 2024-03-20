@@ -43,11 +43,19 @@ console.log(new_array2);
 let array3 = [1, 2, 3, 4, 5];
 
 function shift(arr) {
+  let output = arr[0];
   for (i = 0; i <= arr.length - 1; i++) {
     arr[i] = arr[i + 1];
   }
   arr.length--;
   console.log(arr);
+  return output;
 }
+const data = shift(array3);
+console.log(data);
 
-shift(array3);
+
+
+//Q5 create a splice method :--
+
+let array4 = [];
