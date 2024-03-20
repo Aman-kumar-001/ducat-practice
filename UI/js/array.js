@@ -18,11 +18,28 @@
 //Q2 create a custom function in pop method 
 
 let array1 = [100,200,300];
-let pop = [300];
 let new_array1 = []
 
-for(i=0 ; i<=array1.length-1;i++){
-    if(i==array1.length-1){
-       
-    }
+for(i=0 ; i<=array1.length-2;i++){
+    new_array1 = new_array1 + " " + array1[i];
+    
 }
+console.log(new_array1);
+
+
+//Q3 create a Unshift function:--
+
+
+let array2 = [3000 ,4000 ,5000];
+let unshift = [1000 , 2000];
+let new_array2 = [];
+
+for(i=0 ;i<=unshift.length -1 ;i++){
+    new_array2 = new_array2 + " " + unshift[i];
+}
+for(j=0 ; j<=array2.length -1; j++){
+    new_array2 = new_array2 + " " + array2[j];
+}
+
+console.log(new_array2);
+
