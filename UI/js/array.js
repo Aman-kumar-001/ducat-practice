@@ -27,16 +27,23 @@ console.log(new_array1);
 
 let array2 = [3000, 4000, 5000];
 let unshift = [1000, 2000];
-let new_array2 = [];
 
-for (i = 0; i <= unshift.length - 1; i++) {
+function shifting(arr , elements){
+  let new_array2 = [];
+
+  for (i = 0; i <= elements.length - 1; i++) {
   new_array2 = new_array2 + " " + unshift[i];
 }
-for (j = 0; j <= array2.length - 1; j++) {
+for (j = 0; j <= arr.length - 1; j++) {
   new_array2 = new_array2 + " " + array2[j];
 }
 
-console.log(new_array2);
+console.log(`After unshifting :-- ${new_array2}`);
+}
+
+shifting(array2 , unshift);
+
+
 
 //Q4 create a shift function :
 
