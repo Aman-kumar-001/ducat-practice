@@ -1,30 +1,5 @@
 //Q1 create a custom function in push method
 
-let array = [10, 20, 30];
-
-
-function pushup(array , ...elements){
-  let new_array = [...array];
-
-  for(i=0;i<=elements.length - 1;i++){
-    if(Array.isArray(elements[i])){
-          for(j=0 ; j<=elements[i].length;j++)
-        new_array = new_array  + elements[i][j];
-      
-      }else{
-
-      new_array += elements[i];
-
-    }
-  }
-  
-  console.log(`Final Array we get is : ${new_array}` ,typeof(new_array));
-
-}
-pushup(array , 10);
-
-
-
 let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 console.log(`Original Array : ${arr}`);
 
@@ -33,7 +8,7 @@ function customPush(arr, ...element) {
   return arr;
 }
 
-let newArr = customPush(arr, [10,20 ,30 ,40 ,50]);
+let newArr = customPush(arr, 10,20 ,30 ,40 ,50);
 console.log(`New Array : ${newArr}`);
 
 
