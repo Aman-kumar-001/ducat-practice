@@ -26,41 +26,45 @@ console.log("here is the update",result);
 
 //Q3 create a Unshift function:--
 
-let array2 = [3000, 4000, 5000];
-let unshift = [1000, 2000];
 
-function shifting(arr , elements){
-  let new_array2 = [];
+let arr4 = [20, 30];
 
-  for (i = 0; i <= elements.length - 1; i++) {
-  new_array2 = new_array2 + " " + unshift[i];
+function myUnshift2(arr, ...values) {
+  console.log(values.length);
+  console.log(arr.length);
+  for (let i = arr.length + values.length - 1; i >= values.length; i--) {
+    arr[i] = arr[i - values.length];
+  }
+  
+  for (let j = 0; j < values.length; j++) {
+    arr[j] = values[j];
+  }
+
+  return arr;
 }
-for (j = 0; j <= arr.length - 1; j++) {
-  new_array2 = new_array2 + " " + array2[j];
-}
 
-console.log(`After unshifting :-- ${new_array2}`);
-}
-
-shifting(array2 , unshift);
-
+console.log("multiple", myUnshift2(arr4, 9));
 
 
 //Q4 create a shift function :
 
-let array3 = [1, 2, 3, 4, 5];
+// let array3 = [1, 2, 3, 4, 5];
 
-function shift(arr) {
-  let output = arr[0];
-  for (i = 0; i <= arr.length - 1; i++) {
-    arr[i] = arr[i + 1];
-  }
-  arr.length--;
-  console.log(arr);
-  return output;
-}
-const data = shift(array3);
-console.log(data);
+// function shift(arr) {
+//   let output = arr[0];
+//   for (i = 0; i <= arr.length - 1; i++) {
+//     arr[i] = arr[i + 1];
+//   }
+//   arr.length--;
+//   console.log(arr);
+//   return output;
+// }
+// const data = shift(array3);
+// console.log(data);
+
+
+
+
 
 //Q5 create a splice method :--
 
