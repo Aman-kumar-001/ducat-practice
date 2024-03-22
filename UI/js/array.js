@@ -9,18 +9,20 @@ function customPush(arr, ...element) {
 }
 
 let newArr = customPush(arr, 10,20 ,30 ,40 ,50);
-console.log(`New Array : ${newArr}`);
+console.log(`New Array : ${newArr}`, typeof(newArr));
 
 
 //Q2 create a custom function in pop method
 
-let array1 = [100, 200, 300];
-let new_array1 = [];
 
-for (i = 0; i <= array1.length - 2; i++) {
-  new_array1 = new_array1 + " " + array1[i];
+let arr2 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+function myPop(arr2) {
+  arr2 = arr2.slice(0,  -1);
+  return arr2;
 }
-console.log(new_array1);
+
+let result = myPop(arr2);
+console.log("here is the update",result);
 
 //Q3 create a Unshift function:--
 
