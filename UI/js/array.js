@@ -1,17 +1,23 @@
 //Q1 create a custom function in push method
 
 let array = [10, 20, 30];
-let push = [40, 50, 60, 70, 80];
-let new_array = [];
 
-for (j = 0; j <= array.length - 1; j++) {
-  new_array = new_array + " " + array[j];
-}
-for (i = 0; i <= push.length - 1; i++) {
-  new_array = new_array + " " + push[i];
+
+function pushup(array , ...elements){
+  let new_array = [];
+  for (j = 0; j <= array.length - 1; j++) {
+    new_array += " " + array[j];
+  }
+  if(Array.isArray(elements))
+  for (i = 0; i <= elements.length - 1; i++) {
+    new_array += " " + push[i];
+  }
+  
+  console.log(`Final Array we get is : ${new_array}`);
 }
 
-console.log(`Final Array we get is : ${new_array}`);
+pushup(array , 10);
+
 
 //Q2 create a custom function in pop method
 
