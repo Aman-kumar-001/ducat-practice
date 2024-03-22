@@ -148,3 +148,22 @@ function mySlice(arr , start , last){
 
 let result3 = mySlice(arr3 , 1,arr3.length-1);
 console.log("My slice ",result3);
+
+
+//Q8 index of 
+
+let arr5 = [1,2,3,4,5,6,7];
+
+function myIndex(arr , number){
+  let index = -1;
+  for(i=0; i<=arr.length-1; i++){
+    if(arr[i] === number){
+      index = i;
+      break;
+    }
+    
+  }
+  console.log(index);
+}
+
+myIndex(arr5 , 7);
