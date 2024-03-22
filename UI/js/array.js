@@ -4,19 +4,37 @@ let array = [10, 20, 30];
 
 
 function pushup(array , ...elements){
-  let new_array = [];
-  for (j = 0; j <= array.length - 1; j++) {
-    new_array += " " + array[j];
-  }
-  if(Array.isArray(elements))
-  for (i = 0; i <= elements.length - 1; i++) {
-    new_array += " " + push[i];
+  let new_array = [...array];
+
+  for(i=0;i<=elements.length - 1;i++){
+    if(Array.isArray(elements[i])){
+          for(j=0 ; j<=elements[i].length;j++)
+        new_array = new_array  + elements[i][j];
+      
+      }else{
+
+      new_array += elements[i];
+
+    }
   }
   
-  console.log(`Final Array we get is : ${new_array}`);
+  console.log(`Final Array we get is : ${new_array}` ,typeof(new_array));
+
+}
+pushup(array , 10);
+
+
+
+let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+console.log(`Original Array : ${arr}`);
+
+function customPush(arr, ...element) {
+  arr[arr.length] = element;
+  return arr;
 }
 
-pushup(array , 10);
+let newArr = customPush(arr, [10,20 ,30 ,40 ,50]);
+console.log(`New Array : ${newArr}`);
 
 
 //Q2 create a custom function in pop method
