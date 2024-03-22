@@ -48,19 +48,16 @@ console.log("multiple", myUnshift2(arr4, 9));
 
 //Q4 create a shift function :
 
-// let array3 = [1, 2, 3, 4, 5];
+let array3 = [1, 2, 3, 4, 5];
 
-// function shift(arr) {
-//   let output = arr[0];
-//   for (i = 0; i <= arr.length - 1; i++) {
-//     arr[i] = arr[i + 1];
-//   }
-//   arr.length--;
-//   console.log(arr);
-//   return output;
-// }
-// const data = shift(array3);
-// console.log(data);
+function myshift(arr){
+  arr = arr.slice(1, arr.length+1);
+  return arr;
+}
+const result2 = myshift(array3);
+console.log("shift method:--",result2);
+
+
 
 
 
