@@ -123,3 +123,28 @@ for (let i = 0; i < array4.length; i++) {
 }
 
 console.log(new_array3);
+
+
+//Q7 slice
+
+let arr3 = [1,2,3,4,5,6]
+
+function mySlice(arr , start , last){
+  if (start < 0 || start >= arr.length || last < 0 || last > arr.length){
+     console.log("index not found");
+     return [];
+  }
+  // if(start < arr.length || last < arr.length)
+   
+  let newArr3=[];
+
+  for(i=start;i<last;i++){
+    newArr3.push(arr[i]);
+  }
+
+  return newArr3;
+  
+}
+
+let result3 = mySlice(arr3 , 1,arr3.length-1);
+console.log("My slice ",result3);
