@@ -1,6 +1,6 @@
 //Q1 create a custom function in push method
 
-let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let arr = [1];
 console.log(`Original Array : ${arr}`);
 
 function customPush(arr, ...element) {
@@ -8,7 +8,7 @@ function customPush(arr, ...element) {
   return arr;
 }
 
-let newArr = customPush(arr, 10,20 ,30 ,40 ,50);
+let newArr = customPush(arr, 2,3,4,5,6);
 console.log(`New Array : ${newArr}`, typeof(newArr));
 
 
@@ -43,7 +43,7 @@ function myUnshift2(arr, ...values) {
   return arr;
 }
 
-console.log("multiple", myUnshift2(arr4, 9));
+console.log("multiple", myUnshift2(arr4, 9,10,11));
 
 
 //Q4 create a shift function :
