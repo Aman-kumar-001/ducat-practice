@@ -167,3 +167,23 @@ function myIndex(arr , number){
 }
 
 myIndex(arr5 , 7);
+
+//Q9 last index of
+
+let arr6= [11,12,13,14,15,16,17,18];
+
+function myLastindex(arr , number){
+  let index = -1;
+  for(i=arr.length-1 ; i>=0;i--){
+    if(arr[i]===number){
+      index = i;
+      break;
+    }
+  }
+  return index;
+}
+
+let result4 = myLastindex(arr6 , 16)
+console.log("here is the last indexOF :", result4);
+
+
