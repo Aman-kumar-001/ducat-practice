@@ -201,3 +201,18 @@ function myInclude(arr , number){
 console.log("Number is present or not",myInclude(arr7 , 91));
 // let result5 = myInclude(arr7 , 25);
 // console.log(`include of `,result);
+
+
+let arr8 = [21,22,23,24,25,26,27,28];
+function myInclude(arr , number){
+  let index = false;
+  for(i=0;i<=arr.length-1;i++){
+    if(arr[i] === number){
+        index = true;
+    }
+  }
+  return index;
+}
+console.log("Number is present or not",myInclude(arr8 , 91));
+// let result5 = myInclude(arr7 , 25);
+// console.log(`include of `,result);
