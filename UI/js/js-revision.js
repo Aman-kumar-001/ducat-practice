@@ -81,3 +81,8 @@ var  num ="123456";
 var num2 = parseInt(num);
 console.log(num2 , typeof num2);
 
+var randomNUm1 = Math.floor(Math.random()* 900000) + 100000;
+console.log(randomNUm1);
+
+
+
