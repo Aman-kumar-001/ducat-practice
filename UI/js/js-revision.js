@@ -34,6 +34,40 @@ const obj = new Object({
 
 const obj2 = new Object();
 
-console.log(obj);
-console.log(obj2);
+// console.log(obj);
+// console.log(obj2);
+
+for(const key in object){
+    console.log(key, object[key]);
+    // console.log(key, object[i]);
+}
+
+
+//array 
+
+
+let arr = [1,2,3,4,5,6,7,8];
+
+for(let index in arr){
+    console.log(index , arr[index]);
+}
+
+// string
+ 
+let str = "sunshine";
+
+for(let index in str){
+    console.log(index ,  str[index]);
+}
+
+
+// math
+ 
+
+var maxResult = Math.max(300, 523, 111, 99);
+console.log(maxResult);
+
+
+var maxResult2 = Math.min(999 ,899,799,1209);
+console.log(maxResult2);
 
