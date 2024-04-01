@@ -71,3 +71,13 @@ console.log(maxResult);
 var maxResult2 = Math.min(999 ,899,799,1209);
 console.log(maxResult2);
 
+var absoluteValue = Math.abs(-5);
+console.log(absoluteValue);
+
+var randomNUm = Math.floor(Math.random()* 100000);
+console.log(randomNUm);
+
+var  num ="123456";
+var num2 = parseInt(num);
+console.log(num2 , typeof num2);
+
