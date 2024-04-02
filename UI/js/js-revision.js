@@ -1,6 +1,7 @@
 //objects
 
 
+
 let object ={
     name :{
      firstName : "Aman",
@@ -166,6 +167,100 @@ console.log(x,y);
 const data4 =["peter " , "aman" , "suraj"];
 const [ ,q] =data3; //how to get the second value direct
 console.log(q);
+
+//Q11
+//without using . operator find the value of age
+
+const person = { name : "aman " , age : "23" , company : "google"}
+const {age} = person;
+console.log(age);
+
+
+//Q12 merge two object
+
+let data5 = { name : "Aman" , age : "110" , package : "1cr"};
+let infp ={ company : "remote"};
+
+data5={...data5 , ...infp};
+console.log(data5);
+
+//use let not const
+//what is the {data,..onfo}
+
+//Q13 
+
+let data6 = { name : "Aman" , age : "110" , package : "1cr"};
+let info ={ company : "remote" , age : "23"};
+data6={...data6 , ...info};
+
+console.log(data6);
+
+//second value will rerender the the value
+
+//Q14 
+
+// let name1 = "aman";
+// console.log(name1());
+
+//output :-- name1 is not a function
+
+//Q15
+
+const result3 = false || {} || null;
+console.log(result3);
+
+//{} , in or operator it will get the first positive value;
+
+//Q16
+
+const result4 = false || null || " ";
+console.log(result4);
+
+
+//Q17 
+
+const result5 = false || null || 0;
+console.log(result5);
+
+//if all the value is negative then if will take the last value
+
+//Q18
+
+const result6 = {} || true || 0;
+console.log(result6);
+
+//{}
+
+//Q19 
+
+console.log(Promise.resolve(5));
+
+//promise fulfilled , promise contain another promise inside 
+
+
+//Q20
+
+console.log("emoji " === "emoji ");
+
+//return ture , becuase is compare the unicode inside the emoji
+
+
+//Q21 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
