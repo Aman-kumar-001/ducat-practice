@@ -302,7 +302,84 @@ console.log(num9);
 //first destruct the array using spread operator
 
 
+//Q26
 
+const str2 =`hye you heavy developer`;
+console.log(!typeof str2 === 'Object');
+console.log(!typeof str2 === 'string');
+
+
+//because not of type is false and false === anything is false expect false
+
+
+//Q27
+
+const name7 = "subscribe";
+const age1 = "21"
+
+console.log(isNaN(name7)); //true
+console.log(isNaN(age));
+
+
+//Q28 modify perosn object
+
+let person2 = {name : "harshit"};
+Object.seal(person2);
+
+person2.name = " tiwari";
+console.log(person2);
+
+//you can not add any thing when you aree using seal in it
+
+
+//Q29 
+
+let  data7  =[ 2,3,4,5];
+data7.shift();
+console.log(data7);
+
+///shift to remove the first number 
+
+
+//30
+
+let  data8  =[ 2,3,4,5];
+data8.pop();
+console.log(data8);
+
+//pop to remove last one
+
+//Q31
+
+// check the number is odd or event
+
+
+//Q32 
+
+let person3 ={
+    name : "Naman"
+}
+delete person3.name;
+console.log(person3);
+
+//it delete the value and return the updated object , array or true||false;
+
+
+//Q33
+
+let value = "true";
+console.log(!value , typeof !value);
+
+//Q34 
+
+let value2 = Boolean("true");
+
+console.log(value2 , typeof value2);
+
+//or
+
+let values3 = "true";
+console.log(!!values3 , typeof values3);
 
 
 
