@@ -247,9 +247,59 @@ console.log("emoji " === "emoji ");
 
 //Q21 
 
+// JSON.parse();
+
+//parses JSON to a javascript value
 
 
 
+
+//Q22
+
+// let name3 = "sharma";
+
+// function getName(){
+//     console.log(name3);
+//     let name3 = "sharma ji"
+// }
+
+// getName();
+
+//hoisting used in var only but not let
+
+
+//Q23
+
+
+let name3 = "sharma";
+
+function getName(){
+    console.log(name3);
+}
+
+getName();
+
+//because let have block scope 
+
+
+//Q24 
+
+console.log(`${(x => x)(' i love to ')}program`);
+
+
+
+//Q25 
+
+
+function sum(x,y,z){
+    return x + y + z;
+}
+
+let num9 = sum(...[1,2,3])
+console.log(num9);
+
+
+//first destruct the array using spread operator
 
 
 
