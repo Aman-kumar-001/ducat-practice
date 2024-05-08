@@ -87,9 +87,38 @@ function FindDuplicate(arr) {
   return duplicate;
 }
 
-const arr = [1, 2, 3, 6, 3, 6, 1];
-const duplicateElements = FindDuplicate(arr);
+const arr1 = [1, 2, 3, 6, 3, 6, 1];
+const duplicateElements = FindDuplicate(arr1);
 console.log("Duplicate elements in the array:", duplicateElements);
 
 // find the missind number 
 
+function findMissing(arr, n){
+  const missingNumber = [];
+  
+  for(i=1;i<=n;i++){
+      if (arr.indexOf(i) === -1) {
+        missingNumber.push(i);
+    }
+   
+  }
+   return missingNumber;
+}
+
+const num=5;
+const arr=[1,3];
+let number = findMissing(arr,5);
+console.log(number);
+
+//find the max and the min in array
+
+function Minmax(arr){
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  return {min, max};
+}
+const arr2=[1,2,3,4,5,6];
+const {min ,max} = Minmax(arr2);
+
+console.log('minimum is', min)
+console.log('maximum is ' ,max)
