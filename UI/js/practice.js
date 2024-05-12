@@ -122,3 +122,25 @@ const {min ,max} = Minmax(arr2);
 
 console.log('minimum is', min)
 console.log('maximum is ' ,max)
+
+function arrayReverse(arr){
+  let reverse =  arr.reverse();
+  return reverse
+}
+let arr1 =[ 1,2,3,4,5,6]
+let result = arrayReverse(arr1);
+console.log(result);
+
+
+let array = [1, 2, 3, 4, 5];
+let reversedArray = [...array].reverse(); 
+
+let reversedArray2 = array.slice().reverse(); 
+console.log(reversedArray2); 
+console.log(array); 
+
+
+let array223 = [3, 1, 4, 2, 5,99,61,72];
+array223.sort((a, b) => a - b);
+console.log(array223); 
+//
