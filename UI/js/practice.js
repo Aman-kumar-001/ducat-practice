@@ -195,3 +195,23 @@ function peak(arr , n){
 arr1= [1,2,3,4,5,67,8];
 n=arr1.length;
 console.log("value is " , peak(arr1 , n))
+
+
+// sorting method 
+
+
+function sorting(arr) {
+  return arr.slice().sort((a, b) => a - b);
+}
+
+function sortingd(arr) {
+  return arr.slice().sort((a, b) => b - a);
+}
+
+let arr4565 = [1, 2, 7, 0, 66, 23];
+
+let result7655 = sorting(arr);
+let result1 = sortingd(arr);
+
+console.log("Sorted array in ascending order:", result);
+console.log("Sorted array in descending order:", result1);
