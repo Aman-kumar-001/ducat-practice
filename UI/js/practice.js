@@ -172,3 +172,26 @@ function findPeak(arr, n) {
 var arr888 = [1, 3, 20, 4, 100, 0];
 var n = arr.length;
 document.write("Peak value is " + findPeak(arr888, n));
+
+
+// another way 
+
+
+function peak(arr , n){
+  let indexofPeak = -1;
+  let valueofpeak = 0;
+  
+  for(let i=0;i<n;i++){
+      if(arr[i] > arr[i -1] && arr[i] > arr[i+1]){
+          if(arr[i] > valueofpeak){
+              valueofpeak = arr[i];
+              indexofpeak = i;
+          }
+      }
+  }
+  return valueofpeak;
+}
+
+arr1= [1,2,3,4,5,67,8];
+n=arr1.length;
+console.log("value is " , peak(arr1 , n))
