@@ -215,3 +215,26 @@ let result1 = sortingd(arr);
 
 console.log("Sorted array in ascending order:", result);
 console.log("Sorted array in descending order:", result1);
+
+
+//asscess the value in array of object
+
+function getPersonByName(people, name) {
+  for (let i = 0; i < people.length; i++) {
+      if (people[i].name.toLowerCase() === name.toLowerCase()) {
+          return people[i];
+      }
+  }
+  return null; // Return null if no person with the given name is found
+}
+
+// Example array of objects
+let people = [
+  { name: "aman", age: 30 },
+  { name: "harshit", age: 30 },
+  { name: "aman1223", age: 30 }
+];
+
+// Get a person by name
+let person = getPersonByName(people, "harshit");
+console.log(person);
