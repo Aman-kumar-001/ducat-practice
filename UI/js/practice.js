@@ -355,10 +355,10 @@ function findSub(arr,num1, num2){
   return sum;
 }
 
-let arr = [1,2,3,4,5];
+let arr000 = [1,2,3,4,5];
 first = 1;
 last = 3;
-let result = findSub(arr,1,3);
+let result0000 = findSub(arr,1,3);
 console.log("sum of index from "+ first + " to " + last + "is " +result);
 
 
@@ -386,10 +386,10 @@ if(containNegative){
 }
 }
 
-let arr = [1,2,3];
+let arr123 = [1,2,3];
 first = 0;
 last = 2;
-let result = findSub(arr,first,last);
+let result7890 = findSub(arr,first,last);
 if(result>=0){
     console.log("sum of index from "+ first + " to " + last + "is " +result);
 }else{
