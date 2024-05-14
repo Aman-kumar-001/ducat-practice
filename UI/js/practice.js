@@ -238,3 +238,33 @@ let people = [
 // Get a person by name
 let person = getPersonByName(people, "harshit");
 console.log(person);
+
+
+
+
+
+
+// find the Kth largest and the smallest element 
+
+
+function smallestk(arr,k){
+  //sort the array
+  arr.sort((a,b) => a -b);
+  
+  return arr[k - 1];
+}
+
+let arr321= [1,2,3,4,5,6,7];
+let  k=5
+let result11 = smallestk(arr, k);
+console.log(k +"smallest element in the array is " + result);
+
+function klargest(arr,k){
+  //sort the array
+  arr.sort((a,b) => b - a);
+  
+  return arr[k - 1];
+}
+
+let output = klargest(arr , k);
+console.log(k +"largest element in the array is " + output);
