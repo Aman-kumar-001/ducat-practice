@@ -335,3 +335,63 @@ function sorting(arr){
 let arr789= [1,1,1,2,1,0]
 const result789 = sorting(arr);
 console.log(result);
+
+
+
+//find the sum to given index 
+
+
+function findSub(arr,num1, num2){
+  let first = num1;
+  let last = num2;
+  let sum = 0;
+  
+  for(i=0;i<=arr.length-1;i++){
+      if(arr[i]< 0) return "negative array";
+  }
+  for(i=first;i<=last;i++){
+      sum += arr[i];
+  }
+  return sum;
+}
+
+let arr = [1,2,3,4,5];
+first = 1;
+last = 3;
+let result = findSub(arr,1,3);
+console.log("sum of index from "+ first + " to " + last + "is " +result);
+
+
+//or 
+
+function findSub(arr,num1, num2){
+  let first = num1;
+  let last = num2;
+  let sum = 0;
+  let containNegative = false
+  
+  for(i=0;i<=arr.length-1;i++){
+      if(arr[i]< 0) {
+          containNegative = true;
+      }
+  }
+  if(!containNegative){
+  for(i=first;i<=last;i++){
+      sum += arr[i];
+  }
+  return sum;
+}
+if(containNegative){
+    return -1;
+}
+}
+
+let arr = [1,2,3];
+first = 0;
+last = 2;
+let result = findSub(arr,first,last);
+if(result>=0){
+    console.log("sum of index from "+ first + " to " + last + "is " +result);
+}else{
+    console.log("negative array found");
+}
