@@ -268,3 +268,70 @@ function klargest(arr,k){
 
 let output = klargest(arr , k);
 console.log(k +"largest element in the array is " + output);
+
+
+//find the number of occurance in array 
+
+function findN(arr, N){
+  let num =N;
+  let freq = 0
+  for(i=0 ;i<=arr.length -1 ; i++){
+      if(arr[i]== num){
+          freq += 1;
+      }
+  }
+  return freq;
+}
+let arr09 =[1,1,1,5,5,5,5,2,2,2,2,]
+let result55=findN(arr , 7);
+console.log(result55);
+
+
+// sort the array in  0 1 2
+
+function sorting (arr){
+  let Newarray= [];
+  
+  for(i=0 ;i<=arr.length-1;i++){
+      if(arr[i]== 0){
+          Newarray.push(arr[i]);
+      }
+  }
+  for(i=0 ;i<=arr.length-1;i++){
+      if(arr[i]== 1){
+          Newarray.push(arr[i]);
+      }
+  }
+  for(i=0 ;i<=arr.length-1;i++){
+      if(arr[i]== 2){
+          Newarray.push(arr[i]);
+      }
+  }
+  return Newarray;
+}
+let arr89= [1,0,2,0,0,1,1,1]
+let result89 = sorting(arr);
+console.log(result);
+
+//or 
+
+
+
+function sorting(arr){
+  const count = [0,0,0];
+  for(let num of arr){
+      count[num]++;
+  }
+  console.log(count);
+  
+  const sortedarray =[];
+  for(let i=0;i<=count.length-1;i++){
+      for(j=0 ;j<count[i];j++){
+          sortedarray.push(i);
+      }
+  }
+  return sortedarray;
+}
+let arr789= [1,1,1,2,1,0]
+const result789 = sorting(arr);
+console.log(result);
