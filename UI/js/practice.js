@@ -411,3 +411,38 @@ let result321 = resverSTR(str);
 console.log(result);
 
 
+//Longest Common Prefix using Sorting
+
+
+
+function Findprefix(arr){
+  if(arr.length === " ")return "empty array";
+  if(arr.length === 1) return arr[0];
+  
+  if(arr.length > 1){
+  let first = arr[0];
+  let last = arr[arr.length - 1];
+  let commonPrefix = "";
+
+  // Step 3: Find the common prefix between the first and last strings
+  for (let i = 0; i < first.length; i++) {
+      if (first[i] === last[i]) {
+          commonPrefix += first[i];
+      } else {
+          break;
+      }
+  }
+
+  return commonPrefix;
+  }
+}
+
+
+const strings = [ "flower"];
+let resul1234t = Findprefix(strings);
+console.log(result)
+
+
+///
+
+
