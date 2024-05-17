@@ -395,3 +395,19 @@ if(result>=0){
 }else{
     console.log("negative array found");
 }
+
+
+//string question   reverse a string
+
+
+function resverSTR(str){
+  let words = str.split(" ")//give space between () then it will do it on space 
+  let reverseW= words.reverse();
+   return reverseW.join(" ");
+}
+
+let str="aman";
+let result321 = resverSTR(str);
+console.log(result);
+
+
