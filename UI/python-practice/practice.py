@@ -75,3 +75,41 @@ def secondLargest(nums):
     
 print(secondLargest([1,2,3,8,9,89,98,125,987,890,987,6543]))
             
+#Merge Two Sorted Lists
+
+
+def merge_arr(lst1,lst2):
+    i=j=0
+    merged_list=[]
+    while i < len(lst1) and j < len(lst2):
+        if lst1[i] < lst2[j]:
+           merged_list.append(lst1[i])
+           i +=1 
+        else:
+           merged_list,append(lst2[j])
+           j += 1
+    merged_list.extend(lst1[i:])
+    merged_list.extend(lst2[j:])
+    return merged_list
+    
+    
+lst1 = [1,2,3,4,5,6]    
+lst2 = [7,8,9]    
+print(merge_arr(lst1 , lst2))
+
+
+#Find the Missing Number in an Array
+
+
+def find(arr):
+    n = len(arr)
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    return expected_sum - actual_sum
+    
+print(find([1,2,3,5]))
+
+
+#or
+
+
