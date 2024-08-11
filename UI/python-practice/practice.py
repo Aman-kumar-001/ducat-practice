@@ -8,6 +8,16 @@ def reverse_str(s):
 print(reverse_str("hello"))  # Output: "olleh"
 
 
+#or 
+
+
+def reverse_string(s):
+    return s[::-1]
+
+print(reverse_string("hello"))  # Output: "olleh"
+
+
+
 
 
 
