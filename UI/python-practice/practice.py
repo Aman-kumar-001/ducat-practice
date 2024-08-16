@@ -18,7 +18,32 @@ print(reverse_string("hello"))  # Output: "olleh"
 
 
 
+# Find the Maximum Element in an Array 
 
+
+def findMax(arr):
+    max_num = 0
+    
+    for num  in arr:
+        if num > max_num:
+            max_num = num
+    
+    return max_num
+    
+print(findMax([11,2,90,4,578,6]))
+
+
+# or
+
+
+
+def findMax(arr):
+    return max(arr)
+
+print(findMax([1,1,2,3,4,5,6,7,6]))   
+
+
+#find the max string length
 
 
 
@@ -28,6 +53,10 @@ def is_palindrome(lst):
 
 # Example usage
 print(is_palindrome('naman'))  # Output: True
+
+
+
+
 
 
 #1st[::-1] this will create the reverse order of the string and stored it

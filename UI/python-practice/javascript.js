@@ -27,3 +27,39 @@ function reverseString(str) {
 }
 
 console.log(reverseString("hello"));  // Output: "olleh"
+
+
+
+
+
+
+// Find the Maximum Element in an Array 
+
+
+function findM(arr){
+    let max = 0;
+    
+    for(i=0 ; i<= arr.length - 1 ; i ++){
+        if(arr[i] > max){
+            max = arr[i]
+        }
+    }
+    
+    return max
+}
+
+console.log(findM([1,2,3,4]))
+
+
+// find the max string
+
+
+
+
+
+
+
+
+
+
+
