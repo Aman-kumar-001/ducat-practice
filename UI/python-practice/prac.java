@@ -294,3 +294,34 @@ class Bubble {
         System.out.println("Peak Element: " + peakElement);
     }
 }
+
+
+
+//Program to find the minimum (or maximum) element of an array
+
+
+class MaxMin {
+    public int[] findMinMax(int[] arr12) {
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < arr12.length; i++) {
+            if (arr12[i] > max) {
+                max = arr12[i];
+            }
+            if (arr12[i] < min) {
+                min = arr12[i];
+            }
+        }
+        return new int[]{min, max};  // Returning an array with min and max values
+    }
+
+    public static void main(String[] args) {
+        MaxMin mm = new MaxMin();
+        int[] result = mm.findMinMax(new int[]{1, 2, 3, 4, 5});
+        System.out.println("min = " + result[0] + ", max = " + result[1]);
+    }
+}
+
+
+
