@@ -1,3 +1,26 @@
+//reverse a string 
+
+public class Main{
+    public String reversed(String str){
+        String rev = " ";
+        
+        for(int i = str.length() - 1 ; i>=0 ; i--){
+            rev += str.charAt(i);
+        }
+        
+       return rev;
+        }
+        
+        
+ public static void main(String[] args){
+     Main main = new Main();
+     String rev = main.reversed("aman");
+     System.out.println(rev);
+ }
+}
+
+
+
 //palindrome number 
 
 import java.util.Scanner;
@@ -90,6 +113,29 @@ public class ReverseString {
         System.out.println(rev);
     }
 }
+
+//or 
+
+public class Main{
+    public String reversed(String str){
+        String rev = " ";
+        
+        for(int i = str.length() - 1 ; i>=0 ; i--){
+            rev += str.charAt(i);
+        }
+        
+       return rev;
+        }
+        
+        
+ public static void main(String[] args){
+     Main main = new Main();
+     String rev = main.reversed("aman");
+     System.out.println(rev);
+ }
+}
+
+
 
 
 //bubble sort
@@ -322,6 +368,7 @@ class MaxMin {
         System.out.println("min = " + result[0] + ", max = " + result[1]);
     }
 }
+
 
 
 
