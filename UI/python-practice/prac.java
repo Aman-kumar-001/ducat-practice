@@ -164,6 +164,73 @@ class factorial{
     }
 }
 
+//prime or not 
+
+
+class Prime{
+    public String prime(int num){
+        int factorial =0;
+        for(int i=1;i<=num;i++){
+            if(num % i ==0){
+                factorial += 1;
+            }
+        }
+        if(factorial > 2 ){
+            return "not prime";
+
+            //vowel or consonant 
+
+            class Vorc {
+    public String check(char a) {
+        String[] vowel = {"a", "e", "i", "o", "u"};
+        for (int i = 0; i < vowel.length; i++) {  // Use < instead of <= and correct method for length
+            if (a == vowel[i].charAt(0)) {  // Compare characters correctly
+                return "It's a vowel";
+            }
+        }
+        return "It's a consonant";  // Add a return statement for non-vowels
+    }
+    
+    public static void main(String[] args) {
+        Vorc checked = new Vorc();  // Fix class name from "Vors" to "Vorc"
+        String result = checked.check('a');  // Pass a character, not a variable "a"
+        System.out.println(result);  // Use println to add a new line after the output
+    }
+}
+
+        }else{
+            return "prime";
+        }
+    }
+    
+    
+    public static void main(String[] args){
+        Prime prime = new Prime();
+        String  check = prime.prime(10);
+        System.out.print(check);
+    }
+}
+
+//vowel or consonant 
+
+class Vorc {
+    public String check(char a) {
+        String[] vowel = {"a", "e", "i", "o", "u"};
+        for (int i = 0; i < vowel.length; i++) {  // Use < instead of <= and correct method for length
+            if (a == vowel[i].charAt(0)) {  // Compare characters correctly
+                return "It's a vowel";
+            }
+        }
+        return "It's a consonant";  // Add a return statement for non-vowels
+    }
+    
+    public static void main(String[] args) {
+        Vorc checked = new Vorc();  // Fix class name from "Vors" to "Vorc"
+        String result = checked.check('a');  // Pass a character, not a variable "a"
+        System.out.println(result);  // Use println to add a new line after the output
+    }
+}
+
 //reverse string 
 
 import java.util.Scanner;
