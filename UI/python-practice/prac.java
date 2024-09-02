@@ -47,6 +47,32 @@ public class Palindrome{
    }
 }
 
+//or
+
+
+public class Palindrome {
+    public String Checked(String str) {
+        String str_new = "";  // Initialize str_new as an empty string
+        
+        for (int i = str.length() - 1; i >= 0; i--) {
+            str_new += str.charAt(i);
+        }
+        
+        if (str.equals(str_new)) {
+            return "Palindrome";  // Return the result instead of printing it
+        } else {
+            return "Not Palindrome";  // Return the result instead of printing it
+        }
+    }
+
+    public static void main(String[] args) {
+        Palindrome check = new Palindrome();
+        String result = check.Checked("aman");
+        System.out.println(result);  // Print the result
+    }
+}
+
+
 
 //fibonacci series 
 
