@@ -100,6 +100,32 @@ public class Fibonacci{
     }
 }
 
+//or
+
+public class fibonacci{
+    
+    public static int fibNumber(int nums){
+        if( nums <= 1) return nums;
+        int a = 0 , b = 1 ;
+        for(int i=0 ;i<= nums ;i++){
+            System.out.print(a + " ");
+            int sum = a + b ;
+            a = b ;
+            b = sum ;
+            
+        }
+        return b;
+    }
+    
+    
+    public static void main(String[] args){
+        fibonacci check = new fibonacci();
+        int result = check.fibNumber(10);
+        // System.out.println(result);
+    }
+}
+
+
 //Factorial of a Number (Iteration)
 
 import java.util.Scanner;
