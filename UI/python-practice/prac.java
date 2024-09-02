@@ -146,6 +146,24 @@ public class Factorial{
     }
 }
 
+//or
+
+class factorial{
+    public int factNumber(int nums){
+        int factorial = 1;
+        for(int i = 1 ; i<=nums ;i++){
+            factorial *= i ;
+        }
+        return  factorial;
+    }
+    
+    public static void main(String[] args){
+        factorial fact = new factorial();
+        int result = fact.factNumber(5);
+        System.out.print(result);
+    }
+}
+
 //reverse string 
 
 import java.util.Scanner;
